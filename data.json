@@ -4,9 +4,9 @@
     "size" : "1.24MB",
     "update_time" : "2014-11-22",
     "update_content" :[
-        {"1" : "支持二维码扫一扫"},
-        {"2" : "优化查看会议文档"},
-        {"3"  : "大量的UI修正"}
+        {"1" : "修正性别显示"},
+        {"2" : "修正会议成员"},
+        {"3"  : "修正二维码生成错误"}
 
     ],
     "url":"http://meizhuo.github.io/LightMeeting/apk/LightMeeting.apk"
