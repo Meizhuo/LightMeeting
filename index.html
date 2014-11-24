@@ -23,10 +23,28 @@
                     </h3>
                     <p> &nbsp;&nbsp;Make meeting easier.</p>
 
-                    <h2>最新版本  <span id="text-version_name">1.0.0</span><small style="color:white"> beta</small></h2>
-                    <p class="header-span">
-                        支持Android 4.0.0及以上版本的系统
-                    </p>
+                    <h3>最新版本  <span id="text-version_name">1.0.0</span><small style="color:white"> beta</small></h3>
+
+
+
+                    <div>
+                        <h4>
+                            更新日志:
+                        </h4>
+                        <blockquote id="list-update_content">
+                            <p><small style="color:white">12222</small>
+                            </p>
+                            <p><small style="color:white">12222</small>
+                            </p>
+                            <p><small style="color:white">12222</small>
+                            </p>
+                            <p><small style="color:white">12222</small>
+                            </p>
+                              <p><small style="color:white">12222</small>
+                            </p>
+                        </blockquote>
+
+                    </div>
                     <div class="row-fluid">
                         <div class="span6" id="dl-btn-left">
                             <!-- 下载链接 -->
@@ -35,6 +53,9 @@
                             </a>
                             <p style="color:white">
                                 <br/>&nbsp;<span id="text-size">3.2M</span> | <span id="text-update_time">2014-11-13</span> 更新
+                            </p>
+                            <p style="color:white">
+                                支持Android 4.0.0及以上版本的系统
                             </p>
                         </div>
                         <div class="span6">
@@ -97,6 +118,21 @@
             $('#text-version_name').text(data.version_name);
             $('#text-size').text(data.size);
             $('#text-update_time').text(data.update_time);
+
+            var len = data.update_content.length ;
+            //最多显示5条更新数据
+            if(len >5 ){
+                len = 5;
+            }
+
+            var tamplate = '<p><small style="color:white">{content}</small></p>';
+            var html = '';
+            for(var i=0;i<len;i++){
+                html += tamplate.replace('{content}',data.update_content[i][i+1]);
+            }
+
+            $('#list-update_content').html(html);
+
         });
     })(jQuery);
     </script>
