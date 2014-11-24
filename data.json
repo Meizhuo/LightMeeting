@@ -1,13 +1,14 @@
 {
-    "version_code" : "2",
-    "version_name" : "1.1",
-    "size" : "1.24MB",
-    "update_time" : "2014-11-22",
+    "version_code" : "3",
+    "version_name" : "1.2",
+    "size" : "1.27MB",
+    "update_time" : "2014-11-24",
     "update_content" :[
-        {"1" : "修正性别显示"},
-        {"2" : "修正会议成员"},
-        {"3"  : "修正二维码生成错误"}
-
+        {"1" : "大量优化界面显示"},
+        {"2" : "修正下载新版本的显示"},
+        {"3" : "修复退出会议无回退至主界面"},
+        {"4" : "扫二维码加入后刷新UI"},
+        {"5" : "本次升级需要卸载之前的才能安装"}
     ],
     "url":"http://meizhuo.github.io/LightMeeting/apk/LightMeeting.apk"
 }
